@@ -8,7 +8,7 @@ Just go to the link and start clicking and typing.  When you're done, copy it to
 
 ## Sample
 
-!(Sample Image)[/images/sample-char-art.png]
+!(Sample Image)[images/sample-char-art.png]
 
 This gives me some pretty cool char output when I copy it!
 
