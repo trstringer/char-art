@@ -1,0 +1,52 @@
+body {
+    font-family: Consolas;
+    font-size: x-large;
+}
+
+.char-blank {
+    display: inline;
+    margin-left: 1px;
+    background-color: #f5f5f5;
+    color: darkslategray;
+    padding: 1px;
+    cursor: pointer;
+}
+
+.char-canvas .selected {
+    background-color: darkslategray;
+    color: lightgray;
+}
+
+.control-area .common-char {
+    padding-top: 10px;
+}
+
+.control-area .common-char span {
+    background-color: lightgray;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 3px;
+    cursor: pointer;
+}
+
+.copy {
+    margin-left: 20px;    
+}
+
+.copy .btn-copy {
+    margin-top: 20px;
+}
+
+.message-success {
+    color: green;
+    font-size: x-small;
+    display: none;
+}
+
+.clear {
+    margin-left: 20px;
+}
+
+.clear .btn-clear {
+    margin-top: 20px;
+}
