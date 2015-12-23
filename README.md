@@ -8,7 +8,7 @@ Just go to the link and start clicking and typing.  When you're done, copy it to
 
 ## Sample
 
-!(Sample Image)[images/sample-char-art.png]
+[![cover](images/sample-char-art.png)](http://tstringer.github.io/char-art/)
 
 This gives me some pretty cool char output when I copy it!
 
