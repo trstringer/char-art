@@ -139,6 +139,9 @@ function keyPressHandler(e) {
         case "Delete":
             setCharacterForCurrentCharBlock('&nbsp;');
             break;
+        case "Enter":
+            moveFocusDown();
+            break;
         case " ":
             setCharacterForCurrentCharBlock('&nbsp;');
             moveFocusRight();
