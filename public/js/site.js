@@ -180,6 +180,36 @@ function clearCanvas() {
     }, 0);
 }
 
+function setGridlines(gridDims) {
+    setTimeout(function() {
+        clearGridlines();
+        var maxDims = getMaxCoordinates();
+        for (var y = 0; y <= maxDims.y; y++) {
+            for (var x = 0; x <= maxDims.x; x++) {
+                if ((x + 1) % gridDims.x === 0) {
+                    $('.char-blank[data-x="' + x + '"][data-y="' + y + '"]').addClass('border-right');
+                }
+                if ((y + 1) % gridDims.y === 0) {
+                    $('.char-blank[data-x="' + x + '"][data-y="' + y + '"]').addClass('border-bottom');
+                }
+            }
+        }
+    }, 0);
+}
+function clearGridlines() {
+    $('.char-blank').removeClass('border-right');
+    $('.char-blank').removeClass('border-bottom');
+}
+
+function toggleGridlines() {
+    if (this.is(':checked')) {
+        setGridlines({x: 2, y: 2});
+    }
+    else {
+        clearGridlines();
+    }
+}
+
 $(function () {
     createCanvas(50, 15);
     

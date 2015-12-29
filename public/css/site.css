@@ -17,6 +17,18 @@ body {
     color: lightgray;
 }
 
+.char-canvas .border-right {
+    border-right-width: 1px;
+    border-right-color: black;
+    border-right-style: solid;
+}
+
+.char-canvas .border-bottom {
+    border-bottom-width: 1px;
+    border-bottom-color: black;
+    border-bottom-style: solid;
+}
+
 .control-area .common-char {
     padding-top: 10px;
 }
