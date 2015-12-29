@@ -167,15 +167,17 @@ function setClipboardAttr() {
 }
 
 function clearCanvas() {
-    var maxCoordinates = getMaxCoordinates();
-    
-    for (var y = 0; y <= maxCoordinates.y; y++) {
-        for (var x = 0; x <= maxCoordinates.x; x++) {
-            focusCharBlock(x, y);
-            setCharacterForCurrentCharBlock('&nbsp;');
+    setTimeout(function() {
+        var maxCoordinates = getMaxCoordinates();
+        
+        for (var y = 0; y <= maxCoordinates.y; y++) {
+            for (var x = 0; x <= maxCoordinates.x; x++) {
+                focusCharBlock(x, y);
+                setCharacterForCurrentCharBlock('&nbsp;');
+            }
         }
-    }
-    focusCharBlock(0, 0);
+        focusCharBlock(0, 0);
+    }, 0);
 }
 
 $(function () {
